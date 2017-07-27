@@ -11,8 +11,6 @@
  */
 
 module.exports.sockets = {
-
-
   /***************************************************************************
   *                                                                          *
   * Node.js (and consequently Sails.js) apps scale horizontally. It's a      *
@@ -39,20 +37,15 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
   // adapter: 'memory',
-
   //
   // -OR-
   //
-
   // adapter: 'socket.io-redis',
   // host: '127.0.0.1',
   // port: 6379,
   // db: 0,
   // pass: '<redis auth password>',
-
-
-
- /***************************************************************************
+  /***************************************************************************
   *                                                                          *
   * Whether to expose a 'get /__getcookie' route with CORS support that sets *
   * a cookie (this is used by the sails.io.js socket client to get access to *
@@ -64,11 +57,7 @@ module.exports.sockets = {
   * unit tests)                                                              *
   *                                                                          *
   ***************************************************************************/
-
   // grant3rdPartyCookie: true,
-
-
-
   /***************************************************************************
   *                                                                          *
   * `beforeConnect`                                                          *
@@ -112,8 +101,6 @@ module.exports.sockets = {
   //
   //   // (`false` would reject the connection)
   // },
-
-
   /***************************************************************************
   *                                                                          *
   * `afterDisconnect`                                                        *
@@ -126,7 +113,6 @@ module.exports.sockets = {
   //   // By default: do nothing.
   //   return cb();
   // },
-
   /***************************************************************************
   *                                                                          *
   * `transports`                                                             *
@@ -137,5 +123,4 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
   // transports: ["polling", "websocket"]
-
 };

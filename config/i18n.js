@@ -16,15 +16,12 @@
  */
 
 module.exports.i18n = {
-
   /***************************************************************************
   *                                                                          *
   * Which locales are supported?                                             *
   *                                                                          *
   ***************************************************************************/
-
   // locales: ['en', 'es', 'fr', 'de'],
-
   /****************************************************************************
   *                                                                           *
   * What is the default locale for the site? Note that this setting will be   *
@@ -33,25 +30,19 @@ module.exports.i18n = {
   * response for requests made by non-browser clients (e.g. cURL).            *
   *                                                                           *
   ****************************************************************************/
-
   // defaultLocale: 'en',
-
   /****************************************************************************
   *                                                                           *
   * Automatically add new keys to locale (translation) files when they are    *
   * encountered during a request?                                             *
   *                                                                           *
   ****************************************************************************/
-
   // updateFiles: false,
-
   /****************************************************************************
   *                                                                           *
   * Path (relative to app root) of directory to store locale (translation)    *
   * files in.                                                                 *
   *                                                                           *
   ****************************************************************************/
-
   // localesDirectory: '/config/locales'
-
 };

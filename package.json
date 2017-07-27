@@ -1,24 +1,55 @@
 {
-  "name": "xelborcab",
+  "name": "sails-jest",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
-  "dependencies": {
-    "include-all": "^1.0.0",
-    "rc": "1.0.1",
-    "sails": "~0.12.13",
-    "sails-disk": "~0.10.9"
-  },
-  "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
-  },
+  "license": "",
+  "author": "Spaceship Labs",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tugorez/xelborcab.git"
+    "url": "git://github.com/tugorez/sails-jest.git"
   },
-  "author": "tugorez",
-  "license": ""
+  "scripts": {
+    "precommit": "lint-staged",
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "lint:generate": "rm -f ./.eslintrc-sails && sails-generate-eslintrc",
+    "lint": "npm run lint:generate && eslint . --fix",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage",
+    "test:all": "npm run lint && npm run test:coverage"
+  },
+  "dependencies": {
+    "include-all": "^1.0.0",
+    "rc": "1.0.1",
+    "sails": "~0.12.13"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3",
+    "sails-disk": "~0.10.9",
+    "sails-generate-eslintrc": "https://github.com/tugorez/sails-generate-eslintrc",
+    "sails-memory": "^0.10.7",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/jest/setup.js",
+    "testMatch": [
+      "<rootDir>/tests/**/?(*.)(spec|test).js?(x)"
+    ]
+  },
+  "lint-staged": {
+    "{api,tests,config}/**/*.{js,json}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
