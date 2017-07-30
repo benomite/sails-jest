@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isAuthenticated Policy should refuse the request 1`] = `[JsonWebTokenError: jwt malformed]`;
+
+exports[`isAuthenticated Policy should validate the token 1`] = `"user.id.1"`;

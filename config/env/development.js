@@ -18,17 +18,16 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
+  secret: 'supersecret_development',
   models: {
-    connection: 'memory',
+    connection: 'disk',
     migrate: 'alter',
     schema: true,
   },
-  connections: {
-    memory: {
-      adapter: 'sails-disk',
-    },
-  },
   session: {
     adapter: 'memory',
+  },
+  log: {
+    level: 'info',
   },
 };

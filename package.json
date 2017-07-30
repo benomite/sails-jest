@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
-  "license": "",
-  "author": "Spaceship Labs",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/tugorez/sails-jest.git"
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "include-all": "^1.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "rc": "1.0.1",
+    "sails": "~0.12.13"
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -22,11 +22,13 @@
     "test:coverage": "npm run test -- --coverage",
     "test:all": "npm run lint && npm run test:coverage"
   },
-  "dependencies": {
-    "include-all": "^1.0.0",
-    "rc": "1.0.1",
-    "sails": "~0.12.13"
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tugorez/sails-jest.git"
   },
+  "author": "tugorez",
+  "license": "",
   "devDependencies": {
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
@@ -47,7 +49,7 @@
     ]
   },
   "lint-staged": {
-    "{api,tests,config}/**/*.{js,json}": [
+    "{api,config,jest,tests}/**/*.{js,json}": [
       "eslint --fix",
       "git add"
     ]

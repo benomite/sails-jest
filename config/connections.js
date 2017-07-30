@@ -27,9 +27,13 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  // localDiskDb: {
-  //   adapter: 'sails-disk',
-  // },
+  disk: {
+    adapter: 'sails-disk',
+  },
+  memory: {
+    adapter: 'sails-memory',
+  },
+
   /***************************************************************************
   *                                                                          *
   * MySQL is the world's most popular relational database.                   *
@@ -45,6 +49,7 @@ module.exports.connections = {
   //   password: 'YOUR_MYSQL_PASSWORD', //optional
   //   database: 'YOUR_MYSQL_DB' //optional
   // },
+
   /***************************************************************************
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *
@@ -61,6 +66,7 @@ module.exports.connections = {
   //   password: 'password', //optional
   //   database: 'your_mongo_db_name_here' //optional
   // },
+
   /***************************************************************************
   *                                                                          *
   * PostgreSQL is another officially supported relational database.          *
@@ -77,6 +83,7 @@ module.exports.connections = {
   //   password: 'YOUR_POSTGRES_PASSWORD', // optional
   //   database: 'YOUR_POSTGRES_DB' //optional
   // }
+
   /***************************************************************************
   *                                                                          *
   * More adapters: https://github.com/balderdashy/sails                      *

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cipher Service compare should throw an error if the password is not valid 1`] = `"Bcrypt: mismatching values"`;
+
+exports[`Cipher Service verify should throw an error if the token is not valid 1`] = `"jwt malformed"`;
