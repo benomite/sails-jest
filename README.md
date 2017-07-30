@@ -3,7 +3,13 @@
 [![codecov](https://codecov.io/gh/tugorez/sails-jest/branch/master/graph/badge.svg)](https://codecov.io/gh/tugorez/sails-jest)
 
 
-a [Sails](http://sailsjs.org) application
+a [Sails](http://sailsjs.org) application which demonstrates how to use 
+
+  * [Jest](https://facebook.github.io/jest/)
+  * [Eslint](http://eslint.org/)
+  * [Prettier](https://prettier.io/)
+
+
 
 ## Custom Comands
   * **lint**: to lint the project source code
