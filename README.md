@@ -1,4 +1,7 @@
-# sails jest
+# sails-jest
+[ ![Codeship Status for tugorez/sails-jest](https://app.codeship.com/projects/25815100-56fd-0135-6f2c-3e9c72e1d412/status?branch=master)](https://app.codeship.com/projects/235969)
+[![codecov](https://codecov.io/gh/tugorez/sails-jest/branch/master/graph/badge.svg)](https://codecov.io/gh/tugorez/sails-jest)
+
 
 a [Sails](http://sailsjs.org) application
 
