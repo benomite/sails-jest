@@ -1,0 +1,10 @@
+{
+	"globals": {
+		"sails": true,
+		"AppController": true,
+		"AuthController": true,
+		"UserController": true,
+		"User": true,
+		"CipherService": true
+	}
+}

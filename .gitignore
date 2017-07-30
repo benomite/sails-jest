@@ -117,8 +117,5 @@ nbproject
 .idea
 .node_history
 
-# eslint sails global vars
-.eslintrc-sails
-
 # COVERAGE
 coverage
